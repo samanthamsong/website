@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">♥</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html" class="active">Resume</a></li>
+                <li><a href="projects.html">Art Projects</a></li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="resume-section pdf-view">
+            <div class="resume-header">
+                <h1>My Resume</h1>
+                <a href="documents/Samantha%20Song's%20Resume.pdf" class="btn download-btn" download>Download PDF</a>
+            </div>
+
+            <div class="pdf-container">
+                <object data="documents/Samantha%20Song's%20Resume.pdf" type="application/pdf" width="100%" height="100%">
+                    <p>Your browser doesn't support embedded PDFs. <a href="documents/Samantha%20Song's%20Resume.pdf" download>Download the resume</a> instead.</p>
+                </object>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/samantha-song-b6271815a/" title="LinkedIn">in</a>
+                <a href="#" title="Instagram">📷</a>
+            </div>
+            <p>&copy; 2026 Sam Song. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

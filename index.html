@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">♥</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Art Projects</a></li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1><span>Samantha Song</span></h1>
+                <p class="subtitle">Creative and Product Manager</p>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="icon-btn">
+                        <span class="icon">♜</span>
+                        <span class="label">View My Work</span>
+                    </a>
+                    <a href="resume.html" class="icon-btn">
+                        <span class="icon">♞</span>
+                        <span class="label">My Resume</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/self%20portrait.jpg" alt="Sam Song - Self Portrait">
+                </div>
+                <div class="about-text">
+                    <h3>Creative Artist & Designer</h3>
+                    <p>I'm a passionate artist with a love for creating meaningful visual experiences. My work spans across various mediums including digital illustration, traditional painting, and mixed media.</p>
+                    <p>With years of experience in the creative field, I bring a unique perspective to every project I undertake. I believe in the power of art to communicate, inspire, and transform.</p>
+                    <div class="skills-list">
+                        <span class="skill-tag">Digital Art</span>
+                        <span class="skill-tag">Illustration</span>
+                        <span class="skill-tag">Painting</span>
+                        <span class="skill-tag">Graphic Design</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">Photography</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>Feel free to reach out for a chat :)</p>
+                <div class="contact-links">
+                    <a href="mailto:samanthamsong@gmail.com" class="contact-item">
+                        ✉️ samanthamsong@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/samantha-song-b6271815a/" class="contact-item">
+                        🔗 LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/samantha-song-b6271815a/" title="LinkedIn">in</a>
+                <a href="#" title="Instagram">📷</a>
+            </div>
+            <p>&copy; 2026 Sam Song. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
