@@ -163,7 +163,7 @@ main {
     font-weight: 400;
     margin-bottom: 1rem;
     color: var(--accent-color);
-    letter-spacing: 2px;
+    letter-spacing: -2px;
     text-transform: none;
     line-height: 0.9;
 }
